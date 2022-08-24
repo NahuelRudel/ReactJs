@@ -1,5 +1,6 @@
-import logo from "../../clothingLogo.png"
+import logo from "../../img/clothingLogo.png"
 import "./styles.css"
+import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () => {
     return (
@@ -19,13 +20,15 @@ const NavBar = () => {
                     </li>
                     <li>
                         <a href="#">Pantalones</a>
-                    </li> 
+                    </li>                     
                 </ul>
             </div>
             <div>
                 <button className="buttonNav">Login</button>
+                <a href="#">
+                    <CartWidget />
+                </a>
             </div>
-
         </div>
     )
 }
