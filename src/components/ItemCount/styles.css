@@ -1,0 +1,16 @@
+.contador {
+    width: fit-content;
+    background-color: grey;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+span {
+    margin: 10px;
+    color: white;
+}
+
+button {
+    margin: 3px 0;
+}
