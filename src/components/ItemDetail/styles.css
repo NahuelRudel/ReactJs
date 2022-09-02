@@ -1,0 +1,26 @@
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.detail {
+    margin: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.detailImage {
+    width: 100%;
+}
+
+.detailTitle {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.detailPrice {
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
