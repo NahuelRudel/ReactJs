@@ -1,11 +1,12 @@
 import "./styles.css"
+import { Link } from "react-router-dom"
 
 const Item = ({info}) => {
     return (
-        <a href="#" className="producto">
+        <Link to={`/item/${info.id}` } className="producto">
             <img src={info.imagen} alt={info.titulo} />
             <p>{info.titulo}</p>
-        </a>
+        </Link>
     )
 }
 

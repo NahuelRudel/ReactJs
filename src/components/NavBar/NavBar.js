@@ -1,33 +1,34 @@
 import logo from "../../img/clothingLogo.png"
 import "./styles.css"
 import CartWidget from "../CartWidget/CartWidget"
+import { NavLink } from "react-router-dom"
 
 const NavBar = () => {
     return (
         <div className="navBar-container">
             <div >
-                <a href="#">
+                <NavLink to='/'>
                     <img src={logo} alt="logo" className="logoApp" />
-                </a>
+                </NavLink>
             </div>
             <div>
                 <ul >
                     <li>
-                        <a href="#">Remeras</a>
+                        <NavLink to='/category/remeras'>Remeras</NavLink>
                     </li>
                     <li>
-                        <a href="#">Buzos</a>
+                        <NavLink to='/category/buzos'>Buzos</NavLink>
                     </li>
                     <li>
-                        <a href="#">Pantalones</a>
+                        <NavLink to='/category/pantalones'>Pantalones</NavLink>
                     </li>                     
                 </ul>
             </div>
             <div>
                 <button className="buttonNav">Login</button>
-                <a href="#">
+                <NavLink to='/carrito'>
                     <CartWidget />
-                </a>
+                </NavLink>
             </div>
         </div>
     )
