@@ -1,6 +1,15 @@
 import "./styles.css"
+import ItemCount from "../ItemCount/ItemCount"
+import { Link } from "react-router-dom"
+import { useState } from "react"
 
 const ItemDetail = ({ data }) => {
+  const [goToCart, setGoToCart] = useState(false)
+
+  const onAdd = (cantidad) => {
+    setGoToCart(true)
+  }
+
   return (
     <div className="container">
       <div className="detail">
@@ -10,6 +19,13 @@ const ItemDetail = ({ data }) => {
         <div>
           <h1 className="detailTitle">{data.titulo}</h1>
           <h2 className="detailPrice">$ {data.precio}</h2>
+          {
+            goToCart 
+            ? <button>
+                <Link to="/carrito" className="link">Terminar compra</Link>
+              </button>
+            : <ItemCount inicial={1} stock={10} onAdd={onAdd} />
+          }
         </div>
       </div>
     </div>
