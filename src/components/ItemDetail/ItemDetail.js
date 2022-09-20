@@ -17,11 +17,11 @@ const ItemDetail = ({ data }) => {
     <div className="container">
       <div className="detail">
         <div>
-          <img className="detailImage" src={data.imagen} alt={data.titulo} />
+          <img className="detailImage" src={data.image} alt={data.title} />
         </div>
         <div>
-          <h1 className="detailTitle">{data.titulo}</h1>
-          <h2 className="detailPrice">$ {data.precio}</h2>
+          <h1 className="detailTitle">{data.title}</h1>
+          <h2 className="detailPrice">$ {data.price}</h2>
           {
             goToCart 
             ? <button>
